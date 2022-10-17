@@ -19,18 +19,6 @@
       "description": "Get Hubspot person (contact) contacts",
       "type": "polling",
       "main": "./lib/triggers/getContacts.js"
-    },
-    "getOrganizations": {
-      "title": "Fetch Organizaton Contacts",
-      "description": "Get Hubspot organization (account) contacts",
-      "type": "polling",
-      "main": "./lib/triggers/getOrganizations.js"
-    },
-    "getOrganizationsAndContacts": {
-      "title": "Fetch Organizaton Contacts",
-      "description": "Get Hubspot organization (account) and person (contact) contacts including the refrence to organization",
-      "type": "polling",
-      "main": "./lib/triggers/getOrganizationsAndContacts.js"
     }
   },
   "actions": {
@@ -39,12 +27,6 @@
       "description": "Upsert Hubspot person contacts (contact)",
       "type": "polling",
       "main": "./lib/actions/upsertContact.js"
-    },
-    "upsertOrganization": {
-      "title": "Upsert a organization contact",
-      "description": "Upsert Hubspot organization contacts (account)",
-      "type": "polling",
-      "main": "./lib/actions/upsertOrganization.js"
     }
   }
 }
