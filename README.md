@@ -11,7 +11,7 @@ This connector transforms to and from the hubspot contact data model, using thes
 contact:
 ```json
 {
-  vid: '111',
+  id: '111',
   properties: {
     company:	'Somecompany',
     createdate:	'2019-10-30T03:30:17.883Z',

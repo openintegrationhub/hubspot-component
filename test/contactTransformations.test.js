@@ -235,7 +235,7 @@ describe('Organization transformations', () => {
 describe('Contact transformations', () => {
   it('should transform a full message into OIH format', async () => {
     const contact = {
-      vid: '111',
+      id: '111',
       properties: {
         company:	'Somecompany',
         createdate:	'2019-10-30T03:30:17.883Z',
