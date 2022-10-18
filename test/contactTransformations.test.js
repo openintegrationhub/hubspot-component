@@ -107,6 +107,7 @@ describe('Person transformations', () => {
       data: {
         properties: {
           firstname: 'Joe',
+          jobtitle: 'Technical',
           lastname: 'Doe',
           email: 'joe@doe.com',
           phone: '040123456',
@@ -245,6 +246,7 @@ describe('Contact transformations', () => {
         lastname:	'Smith',
         phone:	'(123) 456789',
         website:	'some.com',
+        jobtitle: 'Assistant',
       },
     };
 
@@ -252,6 +254,7 @@ describe('Contact transformations', () => {
       data: {
         person: {
           firstName: 'John',
+          jobTitle: 'Assistant',
           lastName: 'Smith',
           contactData: [
             {
