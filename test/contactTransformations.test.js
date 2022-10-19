@@ -221,7 +221,7 @@ describe('Organization transformations', () => {
         properties: {
           address: 'Somestreet 1',
           city: 'Somecity',
-          company: 'BigSomeCorp',
+          name: 'BigSomeCorp',
           email: 'joe@doe.com',
           phone: '040123456',
           state: 'Somecountry',
