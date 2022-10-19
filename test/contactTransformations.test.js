@@ -106,12 +106,16 @@ describe('Person transformations', () => {
     const expectedResponse = {
       data: {
         properties: {
+          address: 'Somestreet 1',
+          city: 'Somecity',
           firstname: 'Joe',
           jobtitle: 'Technical',
           lastname: 'Doe',
           email: 'joe@doe.com',
           phone: '040123456',
+          state: 'Somecountry',
           website: 'some-site.com',
+          zip: '12345',
         },
       },
       metadata: {
@@ -215,10 +219,14 @@ describe('Organization transformations', () => {
     const expectedResponse = {
       data: {
         properties: {
+          address: 'Somestreet 1',
+          city: 'Somecity',
           company: 'BigSomeCorp',
           email: 'joe@doe.com',
           phone: '040123456',
+          state: 'Somecountry',
           website: 'some-site.com',
+          zip: '12345',
         },
       },
       metadata: {
@@ -247,6 +255,10 @@ describe('Contact transformations', () => {
         phone:	'(123) 456789',
         website:	'some.com',
         jobtitle: 'Assistant',
+        city: 'somecity',
+        state: 'somestate',
+        address: 'someroad 1a',
+        zip: '12345',
       },
     };
 
@@ -274,7 +286,13 @@ describe('Contact transformations', () => {
             },
           ],
           categories: [],
-          addresses: [],
+          addresses: [{
+            city: 'somecity',
+            country: 'somestate',
+            streetNumber: '1a',
+            street: 'someroad',
+            zipcode: '12345',
+          }],
           relations: [],
         },
         organization: {
@@ -287,7 +305,13 @@ describe('Contact transformations', () => {
             },
           ],
           categories: [],
-          addresses: [],
+          addresses: [{
+            city: 'somecity',
+            country: 'somestate',
+            streetNumber: '1a',
+            street: 'someroad',
+            zipcode: '12345',
+          }],
           relations: [],
         },
       },
