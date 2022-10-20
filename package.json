@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@hubspot/api-client": "^7.1.2",
-    "@openintegrationhub/ferryman": "^1.5.5",
+    "@openintegrationhub/ferryman": "^2.2.0",
     "request": "^2.88.0",
     "request-promise": "4.1.1",
     "uuid": "^8.2.0"
