@@ -1,32 +1,40 @@
 {
-  "title": "Hubspot",
-  "description": "Hubspot OIH Connector",
-  "docsUrl": "https://github.com/openintegrationhub/snazzy-adapter",
-  "buildType": "docker",
-  "credentials": {
-    "fields": {
-      "apikey": {
-        "label": "Your hubspot API key",
-        "required": true,
-        "viewClass": "TextFieldView",
-        "placeholder": "46u08jvqw93rjsddafidpirs"
+   "title":"Hubspot",
+   "description":"Hubspot OIH Connector",
+   "docsUrl":"https://github.com/openintegrationhub/snazzy-adapter",
+   "buildType":"docker",
+   "credentials":{
+      "fields":{
+         "apikey":{
+            "label":"Your hubspot API key",
+            "required":true,
+            "viewClass":"TextFieldView",
+            "placeholder":"46u08jvqw93rjsddafidpirs"
+         }
       }
-    }
-  },
-  "triggers": {
-    "getContacts": {
-      "title": "Fetch Person Contacts",
-      "description": "Get Hubspot person (contact) contacts",
-      "type": "polling",
-      "main": "./lib/triggers/getContacts.js"
-    }
-  },
-  "actions": {
-    "upsertContact": {
-      "title": "Upsert a person contact",
-      "description": "Upsert Hubspot person contacts (contact)",
-      "type": "polling",
-      "main": "./lib/actions/upsertContact.js"
-    }
-  }
+   },
+   "triggers":{
+      "getContacts":{
+         "title":"Fetch Person Contacts",
+         "description":"Get Hubspot person (contact) contacts",
+         "type":"polling",
+         "main":"./lib/triggers/getContacts.js",
+         "metadata":{
+            "in":"./lib/schemas/getContacts.in.json",
+            "out":"./lib/schemas/getContacts.out.json"
+         }
+      }
+   },
+   "actions":{
+      "upsertContact":{
+         "title":"Upsert a person contact",
+         "description":"Upsert Hubspot person contacts (contact)",
+         "type":"polling",
+         "main":"./lib/actions/upsertContact.js",
+         "metadata":{
+            "in":"./lib/schemas/upsertContact.in.json",
+            "out":"./lib/schemas/upsertContact.out.json"
+         }
+      }
+   }
 }

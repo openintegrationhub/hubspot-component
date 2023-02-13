@@ -1,0 +1,72 @@
+{
+   "type":"array",
+   "items":{
+      "type":"object",
+      "properties":{
+         "id":{
+            "type":"string",
+            "description":"The Hubspot contact id."
+         },
+         "properties":{
+            "type":"object",
+            "properties":{
+               "company":{
+                  "type":"string",
+                  "description":"Name of the company this contact is associated with"
+               },
+               "firstname":{
+                  "type":"string",
+                  "description":"First name of the contact"
+               },
+               "lastname":{
+                  "type":"string",
+                  "description":"Last name of the contact"
+               },
+               "phone":{
+                  "type":"string",
+                  "description":"Phone number of the contact"
+               },
+               "city":{
+                  "type":"string",
+                  "description":"City of the contact"
+               },
+               "zip":{
+                  "type":"string",
+                  "description":"Zip code of the contact"
+               },
+               "state":{
+                  "type":"string",
+                  "description":"State of the contact"
+               },
+               "address":{
+                  "type":"string",
+                  "description":"Street address of the contact"
+               },
+               "createddate":{
+                  "type":"string",
+                  "description":"Time of contact's creation, in ISO string format"
+               },
+               "lastmodifieddate":{
+                  "type":"string",
+                  "description":"Time of contact's most recent modification, in ISO string format"
+               }
+            }
+         }
+      }
+   },
+   "example":[
+      {
+         "id":"512",
+         "properties":{
+            "company":"Biglytics",
+            "createdate":"2019-10-30T03:30:17.883Z",
+            "email":"bcooper@biglytics.net",
+            "firstname":"Bryan",
+            "lastmodifieddate":"2019-12-07T16:50:06.678Z",
+            "lastname":"Cooper",
+            "phone":"(877) 929-0687",
+            "website":"biglytics.net"
+         }
+      }
+   ]
+}
